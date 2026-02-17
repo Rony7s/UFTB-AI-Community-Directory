@@ -1,0 +1,228 @@
+/* ===== GOOGLE FONT ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY BACKGROUND ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+    padding: 40px 20px;
+    color: #ffffff;
+}
+
+/* ===== HEADER TITLE ===== */
+.Headtitle {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #00f2fe, #4facfe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== GRID WRAPPER ===== */
+.members-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+/* ===== CARD DESIGN ===== */
+.single-member {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Glow Border Effect */
+.single-member::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 2px;
+    background: linear-gradient(135deg, #00f2fe, #4facfe, #7367f0);
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+/* Hover Effect */
+.single-member:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 40px rgba(0, 242, 254, 0.3);
+}
+
+/* ===== PROFILE IMAGE ===== */
+.single-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #4facfe;
+    margin-bottom: 15px;
+    transition: 0.4s;
+}
+
+.single-member:hover img {
+    transform: scale(1.08);
+    border-color: #00f2fe;
+}
+
+/* ===== TEXT STYLING ===== */
+.name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #00f2fe;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.st_id,
+.dept,
+.session,
+.email,
+.mobile {
+    font-size: 13px;
+    opacity: 0.85;
+    margin: 4px 0;
+}
+
+/* ===== CONTACT BUTTON ===== */
+.contact {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 18px;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #00f2fe, #4facfe);
+    color: #000;
+    transition: 0.4s;
+}
+
+.contact:hover {
+    background: linear-gradient(135deg, #4facfe, #7367f0);
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(79, 172, 254, 0.5);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 500px) {
+    .Headtitle {
+        font-size: 26px;
+    }
+}
+
+
+
+
+/* ================= NEW ADDITIONAL STYLES ================= */
+
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 6px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #00f2fe, #4facfe);
+    color: #000;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 15px;
+    opacity: 0.85;
+    max-width: 600px;
+    margin: 10px auto 0;
+}
+
+/* SEARCH BOX */
+.search-box {
+    margin-top: 25px;
+}
+
+.search-box input {
+    width: 280px;
+    max-width: 90%;
+    padding: 10px 18px;
+    border-radius: 30px;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.search-box input:focus {
+    border-color: #00f2fe;
+    box-shadow: 0 0 15px rgba(0, 242, 254, 0.4);
+}
+
+/* SECTION TITLE */
+.section-title {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+/* SMOOTH FADE IN ANIMATION */
+.members-wrapper {
+    animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
