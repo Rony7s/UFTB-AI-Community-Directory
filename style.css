@@ -29,6 +29,15 @@ body {
     text-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
+.logo-image {
+    width: 150px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 242, 254, 0.4);
+    transition: transform 0.3s ease;
+}
+
 /* ===== GRID WRAPPER ===== */
 .members-wrapper {
     display: grid;

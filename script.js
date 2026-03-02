@@ -1,7 +1,7 @@
 const sheetID = "1g0Jromi5ySF25K1T6cylOTCXKS1_AeCCnSGXiyQ7dLM";
 const sheetURL = `https://docs.google.com/spreadsheets/d/${sheetID}/gviz/tq?tqx=out:json`;
 
-const aiLink = "ai-uftb.jpg";
+const imgLink = "img/ai-uftb.jpg";
 
 fetch(sheetURL)
   .then(res => res.text())
@@ -25,7 +25,7 @@ fetch(sheetURL)
 
       output += `
         <div class="single-member">
-            <img src="${aiLink}" alt="${name}">
+            <img src="${imgLink}" alt="${name}">
             <h3 class="name">${name}</h3>
             <p class="title">${post}</p>
             <p class="st_id">ID: ${id}</p>

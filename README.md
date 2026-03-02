@@ -47,7 +47,7 @@ This project uses a public Google Sheet as a database.
 
 ---
 ## card
-<img src="card-demo.png" alt="Card Demo" style="width:100%; max-width:250px; margin:20px 0; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.2);">
+<img src="img/card-demo.png" alt="Card Demo" style="width:100%; max-width:250px; margin:20px 0; border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.2);">
 
 ## 🔗 Google Sheets JSON API Format
 
