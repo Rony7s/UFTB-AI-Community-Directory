@@ -38,6 +38,19 @@ body {
     transition: transform 0.3s ease;
 }
 
+.social-media {
+    margin-top: 15px;
+}
+.social-media a {
+    color: #00f2fe;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.social-media a:hover {
+    color: #4facfe;
+}
 /* ===== GRID WRAPPER ===== */
 .members-wrapper {
     display: grid;
